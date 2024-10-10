@@ -1,0 +1,44 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore build output
+out/
+dist/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore TypeScript files created by the extension development process
+*.tsbuildinfo
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore VSCode-specific files
+.vscode/
+
+# Ignore environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore npm-related files
+package-lock.json
+
+# Ignore the Yeoman generator backup files
+.yo-rc.json
+
+# Ignore additional settings created by Visual Studio Code
+.vscode-test/
+.vscode-test-web/
+
+# Ignore coverage results (if you use a testing framework like Jest or Mocha)
+coverage/
+
+# Ignore VSCode workspace files
+*.code-workspace
