@@ -38,7 +38,7 @@ export function activate(context: vscode.ExtensionContext) {
 
       // Send a message to OpenAI GPT model
       const response = await openai.chat.completions.create({
-        model: "gpt-3.5-turbo",
+        model: "gpt-4-turbo",
         messages: [
           {
             role: "system",
@@ -47,7 +47,7 @@ export function activate(context: vscode.ExtensionContext) {
           },
           { role: "user", content: fileText },
         ],
-        max_tokens: 100,
+        max_tokens: 1000,
         temperature: 0.7,
       });
 
@@ -86,10 +86,6 @@ export function activate(context: vscode.ExtensionContext) {
   // Command to test a different function
   let disposableTestFunction = vscode.commands.registerCommand("extension.testFunction", () => {
     try {
-      // Placeholder for any OpenAI API interaction
-      const openai = new OpenAI({ apiKey: "" });
-      // Add additional logic if needed
-
       console.log("Another Test was Triggered logs");
       vscode.window.showInformationMessage("Another Test was Triggered");
     } catch (error) {
