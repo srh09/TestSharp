@@ -14,23 +14,23 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.testMe",
-        "title": "Test Me"
+        "command": "extension.createTestsForFile",
+        "title": "Create Tests for File"
       },
       {
-        "command": "extension.anotherTest",
-        "title": "Another Test"
+        "command": "extension.testFunction",
+        "title": "Test Function"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "extension.testMe",
+          "command": "extension.createTestsForFile",
           "when": "editorTextFocus",
           "group": "navigation"
         },
         {
-          "command": "extension.anotherTest",
+          "command": "extension.testFunction",
           "when": "editorTextFocus",
           "group": "navigation"
         }
